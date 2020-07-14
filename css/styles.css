@@ -56,9 +56,21 @@ body {
   border: 1px solid #ff0000;
 }
 
+@media (max-width: 1125px) {
+  .bg_img .about {
+    margin-top: -100px !important;
+  }
+}
+
 @media (max-width: 768px) {
   .bg_img .about {
-    margin-top: 60px;
+    margin-top: 60px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .bg_img .about {
+    margin-top: 40px !important;
   }
 }
 

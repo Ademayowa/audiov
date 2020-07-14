@@ -1,5 +1,6 @@
 :root {
   --white-color: #ffffff;
+  --red-color: #ff0000;
 }
 
 body {
@@ -16,7 +17,7 @@ body {
     url('../images/hero1.png') !important;
   background-size: cover;
   background-position: center;
-  padding-bottom: 80px;
+  /* padding-bottom: 80px; */
   background: #050505;
 }
 
@@ -39,7 +40,7 @@ body {
 .forms .form-control {
   height: 70px;
   background: #000000;
-  border: 1px solid #ff0000;
+  border: 1px solid var(--red-color);
   box-sizing: border-box;
   border-radius: 5px;
   font-weight: 600;
@@ -50,15 +51,18 @@ body {
 
 .forms .btn-danger {
   height: 70px;
-  background: #ff0000;
+  background: var(--red-color);
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
-  border: 1px solid #ff0000;
+  border: 1px solid var(--red-color);
 }
 
 @media (max-width: 1125px) {
   .bg_img .about {
-    margin-top: -100px !important;
+    padding-top: 170px !important;
+  }
+  .forms {
+    padding-top: 30px;
   }
 }
 
@@ -68,10 +72,81 @@ body {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 576px) {
+  .bg {
+    background-color: black !important;
+    padding: 80px 0px 150px 0 !important;
+  }
+  .rectangle {
+    background: url('../images/phones.png') no-repeat;
+    background-size: contain;
+    padding-bottom: 300px;
+    margin-left: 100px !important;
+  }
+  .labels {
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }
+  header .mobile_font {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    color: var(--white-color);
+  }
+  .bg_img h2 {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 1.8;
+    height: 51px;
+    margin-top: -35px;
+  }
   .bg_img .about {
-    margin-top: 40px !important;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.8;
+
+    position: relative;
+    top: -20px !important;
+  }
+  .forms {
+    padding-top: 70px;
+  }
+  .bg_img {
+    background: url('../images/hero1.png');
+    background-size: contain !important;
+    background-position: center;
+    background: rgba(8, 8, 7, 0.95);
+  }
+  .notified {
+    margin-top: -60px;
+    font-weight: normal !important;
+    font-size: 12px;
+    line-height: 10px;
+  }
+  .btn-danger {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    font-weight: 600 !important;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .form-control {
+    width: 50% !important;
   }
 }
 
+@media (max-width: 992px) {
+  .bg_img .about {
+    padding-top: 380px !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .bg_img .about {
+    margin-top: -320px !important;
+  }
+}
 /* Hero end */
